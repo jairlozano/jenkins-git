@@ -1,6 +1,7 @@
-pipeline {
+node {
     agent {
-      docker { image 'docker' }
+      docker { image 'docker'}
+      label 'docker'
     }
     stages {
         stage('Build') {
