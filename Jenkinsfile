@@ -1,7 +1,6 @@
-node {
+pipeline {
     agent {
-      docker { image 'docker'}
-      label 'docker'
+      docker { image 'ubuntu:18.04'}
     }
     stages {
         stage('Build') {
