@@ -1,8 +1,5 @@
 pipeline {
-    agent {
-      docker { 
-          image 'ubuntu:18.04' 
-          label 'docker-slave'
+    agent { label 'docker-slave'
       }
     }
     stages {
