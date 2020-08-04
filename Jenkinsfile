@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'chrome-node' }
+    agent { label 'docker-slave' }
     stages {
         stage('Build') {
             steps {
